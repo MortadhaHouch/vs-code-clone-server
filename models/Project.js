@@ -7,5 +7,13 @@ let projectSchema = new Schema({
     description:{
         type:String
     },
+    views:{
+        type:Number,
+        default:0
+    },
+    isPublic:{
+        type:Boolean,
+        default:true
+    }
 })
 module.exports = model("Project",projectSchema)
