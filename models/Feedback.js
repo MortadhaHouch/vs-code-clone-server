@@ -1,7 +1,7 @@
 let {model,Schema} = require("mongoose");
 let feedbackSchema = new Schema({
     author:{
-        typeof:Schema.Types.ObjectId,
+        type:Schema.Types.ObjectId,
         required: true
     },
     content:{

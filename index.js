@@ -13,6 +13,7 @@ const {PORT} = process.env
 app.use(cors({
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     origin: 'http://localhost:5173',
+    credentials:true
 }))
 connectToDB()
 app.use("/user",userRouter);
